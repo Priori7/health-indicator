@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'v23.5.0'
+          node-version: '23.5.0'
 
       - name: Check Node.js version
         run: node --version
@@ -23,5 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Check jest binary permissions
+        run: ls -l node_modules/.bin/jest
+
+      - name: Fix jest permissions
+        run: chmod +x node_modules/.bin/jest
+
       - name: Run tests
-        run: npx jest --coverage
+        run: npm test
