@@ -1,1 +1,1 @@
-![Node.js CI](https://github.com/Priori7/health-indicator/workflows/Node.js%20CI/badge.svg)
+[![CI](https://github.com/Priori7/health-indicator/actions/workflows/ci.yml/badge.svg)](https://github.com/Priori7/health-indicator/actions/workflows/ci.yml)
